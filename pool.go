@@ -22,7 +22,7 @@ func Pool1() {
 	wg.Add(1)
 	pool := &sync.Pool{
 		New: func() interface{} {
-			return "hello world"
+			return "Hello world"
 		},
 	}
 	go func(pool *sync.Pool, deferFunc func()) {
